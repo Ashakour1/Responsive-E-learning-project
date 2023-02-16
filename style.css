@@ -456,15 +456,7 @@ button:hover{
     background-color: #fff;
 }
 
-@media screen and (max-width: 600px){
-	.contact-box{
-		grid-template-columns: 2fr;
-        width: 100%;
-	}
-	.left{
-		height: 200px;
-	}
-}
+
 
 .contact{
     padding: 60px 11%;
@@ -597,4 +589,18 @@ section{
     .home{
         height: 120vh;
     }
+    .contact{
+        width: 100%;
+     }
+     	.contact-box{
+		grid-template-columns: 2fr;
+        width: 100%;
+        display: none;
+        
+        
+	}
+	.left{
+		height: 200px;
+	}
+    
 }

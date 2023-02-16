@@ -250,7 +250,7 @@ header.sticky .header{
     transform: scale(0.9) translateY(-5px);
 }
 .courses{
-	background: url(../img/coursebg.png);
+	background: url(images/coursebg.png);
 	background-size: cover;
 	background-position: center;
 }

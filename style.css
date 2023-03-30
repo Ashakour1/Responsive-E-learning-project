@@ -109,7 +109,7 @@ section{
     max-width: 460px;
     position: relative;
 }
-.home-from form input:first-child{
+.home-from  input:first-child{
     display: inline-block;
     width: 100%;
     outline: none;
@@ -118,7 +118,7 @@ section{
     border-radius: 30px;
 
 }
-.home-from form input:last-child{
+.home-from  input:last-child{
     position: absolute;
     display: inline-block;
     outline: none;
@@ -363,7 +363,9 @@ header.sticky .header{
     margin-bottom: 10px;
 }
 #massage{
-    background-color: #c8c4c4;
+    background: url(images/background.png);
+    background-size: cover;
+    background-position: center;
 }
 .form{
 	position: relative;
@@ -377,12 +379,12 @@ header.sticky .header{
 
 
 .contact-box{
-	max-width: 850px;
+	max-width: 950px;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	justify-content: center;
 	align-items: center;
-	text-align: center;
+	
 	background-color: #fff;
 	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
     

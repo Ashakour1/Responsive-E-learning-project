@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dugsiiye</title>
-
+<link rel="stylesheet" href="form.css">
     <!-- Favi icon -->
     <link rel="icon" href="Favicon/D.png">
 
@@ -19,6 +19,28 @@
 <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&family=Montserrat:wght@300;500;600;700;800;900&family=Roboto:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <div>
+        <!-- alert component -->
+           <div class="alert alert-success hide">
+               <div class="alert--content">
+                   <p class="alert--text">
+                       <i class="fas fa-check-circle"></i> 
+                       <span class="success-message"></span>
+                   </p>
+               </div>
+           </div>
+   
+           <!-- error alert -->
+           <div class="alert alert-error hide">
+               <div class="alert--content">
+                   <p class="alert--text">
+                       <i class="fas fa-circle-exclamation"></i> 
+                       <span class="error-message"></span>
+                   </p>
+               </div>
+           </div>
+      </div>
 <!-- header -->
 <header class="sticky"id="home">
 <section class="header">
@@ -321,21 +343,34 @@
 <!-- massage -->
 <section  id="massage">
     
-    <div class="form">
-		<div class="contact-box">
-			<div class="left"></div>
-			<div class="right">
-				<h2>Contact Us</h2>
-                <form >
-				<input type="text" class="field"  id="name" placeholder="Your Name">
-				<input type="number" class="field" id="phone" placeholder="Your Phone">
-				<input type="email" class="field" id="email" placeholder="Your Email">
-				<textarea placeholder="Message" class="field"></textarea>
-				<button type="submit">Send</button>
-            </form>
-			</div>
-		</div>
-	</div>
+    <div class="cont">
+        <h1>Contact</h1>
+        <form action="form" id="form">
+            <div class="form-control">
+                <label for="username">Fullname</label>
+                <input type="text" name="full_name" id="username" class="username">
+                <i class='bx bx-check success-message-icon'></i>
+                <i class='bx bx-error error-message-icon'></i>
+                <small>Error Massage</small>
+            </div>
+            <div class="form-control">
+                <label for="Email">Email</label>
+                <input type="text" name="email" id="Email" class="Email">
+                <i class='bx bx-check success-message-icon'></i>
+                <i class='bx bx-error error-message-icon'></i>
+             <small>Error Massage</small>
+            </div>
+            <div class="form-control">
+                <label for="Massage">Message</label>
+               <textarea id="textArea" name="message"></textarea>
+               <i class='bx bx-check success-message-icon'></i>
+                <i class='bx bx-error error-message-icon'></i>
+             <small>Error Massage</small>
+            </div>
+       
+            <button type="submit" class="Btn submit-btn">Submit</button>
+        </form>
+        </div>
     
 
 </section>
@@ -379,7 +414,10 @@
 </div>
     <!-- js link -->
     <script src="main.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="sendemail.js"></script>
     
 </body>
 </html>

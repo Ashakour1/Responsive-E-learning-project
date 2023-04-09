@@ -155,7 +155,7 @@ button.submit-btn:disabled{
         width: 350px;
     }
     .cont{
-        width: 300px;
+        display: none;
     }
 }
 @media screen  and (max-width : 500px){
@@ -163,7 +163,7 @@ button.submit-btn:disabled{
         width: 310px;
     }
     .cont{
-        width: 300px;
+        display: none;
     }
 }
 @media screen  and (max-width : 500px){
@@ -171,6 +171,6 @@ button.submit-btn:disabled{
         width: 300px;
     }
     .cont{
-        width: 300px;
+        display: none;
     }
 }

@@ -154,23 +154,26 @@ button.submit-btn:disabled{
     .container{
         width: 350px;
     }
-    .cont{
+    #massage{
         display: none;
+        
     }
 }
 @media screen  and (max-width : 500px){
     .container{
         width: 310px;
     }
-    .cont{
+    #massage{
         display: none;
+        
     }
 }
 @media screen  and (max-width : 500px){
     .container{
         width: 300px;
     }
-    .cont{
+    #massage{
         display: none;
+        
     }
 }

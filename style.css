@@ -366,6 +366,7 @@ header.sticky .header{
     background: url(images/background.png);
     background-size: cover;
     background-position: center;
+    
 }
 .form{
 	position: relative;
@@ -591,18 +592,6 @@ section{
     .home{
         height: 120vh;
     }
-    .contact{
-        width: 100%;
-     }
-     	.contact-box{
-		grid-template-columns: 2fr;
-        width: 100%;
-        display: none;
-        
-        
-	}
-	.left{
-		height: 200px;
-	}
+  
     
 }
